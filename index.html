@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Mamãe Clory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagem/logo.jpg" alt="" class="logo">
+            <h1>Associação Mamãe Clory </h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-voltar-topo">Voltar ao Topo</a>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <img src="imagem/principal.jpg" alt="" class="banner-image">
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Lar da Mamãe Clory</h2>
+            <p>Somos uma entidade filantrópica de atividade pública Municipal, Estadual e Federal, que desenvolve projetos sociais para crianças, adolescentes, famílias e idosos...</p>
+            <img src="imagem/sobre.jpg" alt="" class="sobre-image">
+            <!-- Adicione mais informações sobre a instituição aqui -->
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-info">
+                <div class="bazar">
+                    <h3>Bazar de Roupas e Brinquedos</h3>
+                    <p>Vendemos uma variedade de produtos, incluindo camisas, tênis, bolsas, brinquedos e muito mais.</p>
+                    <img src="imagem/bazar.jpg" alt="" class="bazar-image">
+                </div>
+                <div class="bazar">
+                    <h3>Bazar de Eletrônicos e Móveis</h3>
+                    <p>Vendemos uma variedade de produtos eletrônicos, móveis e utensílios domésticos.</p>
+                    <img src="imagem/bazar2.jpg" alt="" class="bazar-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Associação Mamar Clory. Todos os direitos reservados.</p>
+            <span>Número de contato:(11) 94467-4730</span>
+            <br>
+            <span>Localização: Rua Francisco Visentainer, 438 - Bairro Assunção , São Bernardo do Campo, SP, Brazil</span>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnVoltarTopo = document.querySelector('.btn-voltar-topo');
+    
+            btnVoltarTopo.addEventListener('click', function(e) {
+                e.preventDefault();
+                const scrollToTop = () => {
+                    const c = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (c > 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, c - c / 8);
+                    }
+                };
+                scrollToTop();
+            });
+        });
+    </script>
+</body>
+</html>

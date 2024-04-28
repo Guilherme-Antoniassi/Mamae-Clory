@@ -1,0 +1,151 @@
+
+/* Estilos Gerais */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagem/background.jpeg);
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilos do Cabeçalho */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(158, 139, 139, 0.68);
+    padding: 30px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 10px;
+    padding-left: 40px;
+    font-size: 24px;
+    color: #fefefe;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 140px;
+    height: 90px;
+   font-size: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor:pointer;
+   
+}
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+   
+}
+
+/* Estilos do Banner */
+
+section#banner {
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+section#banner h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Estilos de Seção */
+
+section#sobre,
+section#servicos {
+    padding: 40px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+section#sobre h2,
+section#servicos h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    background-color: #ddd;
+}
+
+/* Estilos de Serviços */
+
+.servicos-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bazar {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-voltar-topo {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-voltar-topo:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos do Rodapé */
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos de Imagem */
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 100px; 
+    height: auto;
+    z-index: 999; 
+}
+
+.banner-image,
+.sobre-image,
+.bazar-image {
+    width: 100%; 
+    height: auto;
+    margin-top: 20px; 
+}
